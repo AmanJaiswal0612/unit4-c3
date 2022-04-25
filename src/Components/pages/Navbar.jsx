@@ -12,7 +12,7 @@ export const Navbar = () => {
  
   return (
     <>
-      <nav style={{display:"flex", gap:"200px",border:"1px solid black"}}>
+      <nav style={{display:"flex", gap:"300px",border:"1px solid black",background:"pink",padding:"30px"}}>
         {/* keep all the NavLinks here */}
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/about"}>About</NavLink>
