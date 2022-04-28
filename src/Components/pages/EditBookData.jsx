@@ -16,7 +16,7 @@ export const Textarea = styled.textarea`
 
 
 export const EditBookData = () => {
-
+ let navigate=useNavigate();
   let [pdata,setPdata]=useState({});
   let {id}= useParams();
   
@@ -40,6 +40,7 @@ export const EditBookData = () => {
       body: JSON.stringify(pdata),
       headers: {"Content-type": "application/json"}
     })
+    navigate(`/books/${id}`)
     // make a PATCH request to http://localhost:8080/books/${id} and update thubnail and long description fields
     // on successfull request navigate to previous page
   };
